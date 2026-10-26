@@ -70,8 +70,6 @@ section {
     margin-bottom: 22px;
 }
 
-
-
 .dia-evento {
     width: 280px;
     border: 1px solid #cccccc;
@@ -98,32 +96,36 @@ section {
 
 .botao-link {
     display: inline-block;
-    background-color: #333333;
-    color: white;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-weight: bold;
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 8px;
+    border: 1px solid #cccccc;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .botao-link:hover {
-    background-color: #555555;
+    background-color: #e6b800;
     transform: translateY(-1.5px);
 }
 
 .botao-saiba-mais {
     display: inline-block;
-    background-color: #333333;
-    color: white;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     margin-top: 15px;
+    border: 1px solid #cccccc;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .botao-saiba-mais:hover {
-    background-color: #555555;
+    background-color: #e6b800;
     transform: translateY(-1.5px);
 }
 
@@ -169,6 +171,7 @@ th {
         width: 95%;
     }
 }
+
 .cabecalho {
     display: flex;
     align-items: center; 
@@ -208,7 +211,6 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
-
 
 .galeria {
     display: flex;

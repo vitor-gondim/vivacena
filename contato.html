@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Viva Cena</title>
+    <link rel="stylesheet" href="estilizacao/stylecontato.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="imagens/Logo.png" alt="Logotipo do Festival Viva Cena" height="80" class="logo">
+        <div class="textos-cabecalho">
+            <h1>Festival Viva Cena</h1>
+            <p>Música, Teatro e Cinema nos dias 16, 17 e 18 de julho de 2027.</p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre o Festival</a>
+        <a href="musica.html">Música</a>
+        <a href="teatro.html">Teatro</a>
+        <a href="cinema.html">Cinema</a>
+        <a class="pagina-atual" href="contato.html">Contato</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <main>
+        <section class="sessao-formulario">
+            <h2>Formulário de Contato e Pesquisa</h2>
+
+            <form action="#" method="get">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto da mensagem:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione...</option>
+                    <option value="duvida">Dúvida sobre ingressos</option>
+                    <option value="imprensa">Imprensa / Cobertura</option>
+                    <option value="outro">Outros</option>
+                </select>
+
+                <p class="rotulo-grupo">Qual dia você prefere?</p>
+                <div class="grupo-opcoes">
+                    <input type="radio" id="dia16" name="dia_pref" value="musica">
+                    <label for="dia16">Dia 16 (Música)</label>
+
+                    <input type="radio" id="dia17" name="dia_pref" value="teatro">
+                    <label for="dia17">Dia 17 (Teatro)</label>
+
+                    <input type="radio" id="dia18" name="dia_pref" value="cinema">
+                    <label for="dia18">Dia 18 (Cinema)</label>
+                </div>
+
+                <p class="rotulo-grupo">Deseja receber novidades por e-mail?</p>
+                <div class="grupo-opcoes">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Sim, quero receber a programação e promoções.</label>
+                </div>
+
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+
+                <div class="botoes-form">
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    <button type="reset" class="btn-limpar">Limpar Campos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Festival Viva Cena — Todos os direitos reservados | 2027</p>
+        <p>contato@vivacena.com.br</p>
+    </footer>
+</body>
+
+</html>

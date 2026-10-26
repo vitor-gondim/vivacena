@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.menu a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+.menu .pagina-atual {
+    border-bottom: 2px solid #ffcc00;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 22px;
+}
+
+
+
+.dia-evento {
+    width: 280px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-top: 5px solid #333;
+    text-align: center;
+}
+
+.dia-musica {
+    border-top-color: #0056b3;
+}
+
+.dia-teatro {
+    border-top-color: #ffcc00;
+}
+
+.dia-cinema {
+    border-top-color: #e60000;
+}
+
+.botao-link {
+    display: inline-block;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-link:hover {
+    background-color: #555555;
+    transform: translateY(-1.5px);
+}
+
+.botao-saiba-mais {
+    display: inline-block;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #555555;
+    transform: translateY(-1.5px);
+}
+
+.lista-simples {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ol {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #cccccc;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #333333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .galeria {
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+.cabecalho {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding: 20px 40px; 
+}
+
+.logo {
+    width: 120px; 
+    height: auto;
+}
+
+.textos-cabecalho {
+    text-align: left; 
+}
+
+.aviso-vendas {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+}
+
+.patrocinadores {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 12px 20px;
+    justify-content: flex-start;
+}
+
+.galeria::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.galeria::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background: #0056b3; 
+    border-radius: 10px;
+}
+
+.galeria::-webkit-scrollbar-thumb:hover {
+    background: #003d82;
+}

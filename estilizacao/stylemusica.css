@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0 5px 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.menu .pagina-atual {
+    border-bottom: 2px solid #ffcc00;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.atracao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    padding: 24px;;
+}
+
+.atracao img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.info h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .atracao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .atracao img {
+        width: 100%;
+    }
+}
+
+.tema-musica {
+    border-top: 5px solid #0056b3;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding: 20px 40px; 
+}
+
+.logo {
+    width: 120px; 
+    height: auto;
+}
+
+.textos-cabecalho {
+    text-align: left; 
+}

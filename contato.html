@@ -31,90 +31,86 @@
     </nav>
 
     <main>
-        <section class="sessao-formulario">
-            <h2>Contato e Reserva</h2>
-            <p style="margin-bottom: 25px; color: #555;">Utilize o formulário abaixo para tirar dúvidas gerais ou garantir sua pré-reserva com desconto.</p>
+    <section class="sessao-formulario">
+        <h2>Contato e Reserva</h2>
+        <p class="subtitulo-formulario">Utilize o formulário abaixo para tirar dúvidas gerais ou garantir sua pré-reserva com desconto.</p>
 
-            <form action="#" method="get">
+        <form action="#" method="get">
 
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="telefone">Telefone / WhatsApp:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+            <label for="telefone">Telefone / WhatsApp:</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-                <label for="assunto">Assunto da mensagem:</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="">Selecione...</option>
-                    <option value="reserva" style="font-weight: bold;">Quero fazer uma Pré-Reserva (15% OFF)</option>
-                    <option value="duvida">Dúvida geral</option>
-                    <option value="imprensa">Imprensa / Cobertura</option>
-                    <option value="outro">Outros</option>
+            <label for="assunto">Assunto da mensagem:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione...</option>
+                <option value="reserva" class="opcao-destaque">Quero fazer uma Pré-Reserva (15% OFF)</option>
+                <option value="duvida">Dúvida geral</option>
+                <option value="imprensa">Imprensa / Cobertura</option>
+                <option value="outro">Outros</option>
+            </select>
+
+            <div class="caixa-reserva">
+                <h3>Detalhes da Reserva</h3>
+                <p>Preencha esta área apenas se deseja reservar ingressos. Escolha o passe de um dia inteiro ou pague mais barato por atração única.</p>
+
+                <label for="atracao_desejada" class="rotulo-destaque">Selecione o Passe ou Atração:</label>
+                <select id="atracao_desejada" name="atracao_desejada" class="campo-entrada">
+                    <option value="">Selecione a opção desejada...</option>
+                    
+                    <optgroup label="Dia 16/07 - Música">
+                        <option value="musica_unica1">Atração Única: Primeira Banda (R$ 50,00)</option>
+                        <option value="musica_unica2">Atração Única: Banda Principal (R$ 50,00)</option>
+                        <option value="musica_passaporte">Passaporte Dia Completo - Todas de Música (R$ 80,00)</option>
+                    </optgroup>
+
+                    <optgroup label="Dia 17/07 - Teatro">
+                        <option value="teatro_unica1">Atração Única: Peça da Tarde (R$ 50,00)</option>
+                        <option value="teatro_unica2">Atração Única: Peça da Noite (R$ 50,00)</option>
+                        <option value="teatro_passaporte">Passaporte Dia Completo - Todas de Teatro (R$ 80,00)</option>
+                    </optgroup>
+
+                    <optgroup label="Dia 18/07 - Cinema">
+                        <option value="cinema_unica1">Atração Única: Palestra com Dan Stulbach (R$ 50,00)</option>
+                        <option value="cinema_unica2">Atração Única: O Auto da Compadecida 2 (R$ 50,00)</option>
+                        <option value="cinema_passaporte">Passaporte Dia Completo - Todas de Cinema (R$ 80,00)</option>
+                    </optgroup>
                 </select>
 
-                <!-- CAIXA DE DETALHES DA RESERVA (DESTACADA) -->
-                <div style="background-color: #f9f9f9; border-left: 4px solid #ffcc00; padding: 20px; margin: 25px 0; border-radius: 5px;">
-                    <h3 style="margin-top: 0; margin-bottom: 5px; font-size: 18px; color: #1a1a1a;">Detalhes da Reserva</h3>
-                    <p style="font-size: 13px; color: #777; margin-bottom: 20px;">Preencha esta área apenas se deseja reservar ingressos. Escolha o passe de um dia inteiro ou pague mais barato por atração única.</p>
-
-                    <label for="atracao_desejada" style="display: block; margin-bottom: 5px; font-weight: 600;">Selecione o Passe ou Atração:</label>
-                    <select id="atracao_desejada" name="atracao_desejada" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: 'Poppins', sans-serif; margin-bottom: 15px;">
-                        <option value="">Selecione a opção desejada...</option>
-                        
-                        <!-- MÚSICA -->
-                        <optgroup label="Dia 16/07 - Música">
-                            <option value="musica_unica1">Atração Única: Primeira Banda (R$ 50,00)</option>
-                            <option value="musica_unica2">Atração Única: Banda Principal (R$ 50,00)</option>
-                            <option value="musica_passaporte">Passaporte Dia Completo - Todas de Música (R$ 80,00)</option>
-                        </optgroup>
-
-                        <!-- TEATRO -->
-                        <optgroup label="Dia 17/07 - Teatro">
-                            <option value="teatro_unica1">Atração Única: Peça da Tarde (R$ 50,00)</option>
-                            <option value="teatro_unica2">Atração Única: Peça da Noite (R$ 50,00)</option>
-                            <option value="teatro_passaporte">Passaporte Dia Completo - Todas de Teatro (R$ 80,00)</option>
-                        </optgroup>
-
-                        <!-- CINEMA -->
-                        <optgroup label="Dia 18/07 - Cinema">
-                            <option value="cinema_unica1">Atração Única: Palestra com Dan Stulbach (R$ 50,00)</option>
-                            <option value="cinema_unica2">Atração Única: O Auto da Compadecida 2 (R$ 50,00)</option>
-                            <option value="cinema_passaporte">Passaporte Dia Completo - Todas de Cinema (R$ 80,00)</option>
-                        </optgroup>
-                    </select>
-
-                    <p class="rotulo-grupo" style="margin-top: 15px; font-weight: 600;">Tipo de Ingresso:</p>
-                    <div class="grupo-opcoes">
-                        <input type="radio" id="inteira" name="tipo_ingresso" value="inteira">
-                        <label for="inteira">Inteira</label>
-
-                        <input type="radio" id="meia" name="tipo_ingresso" value="meia">
-                        <label for="meia">Meia-Entrada (50% de desconto)</label>
-                    </div>
-
-                    <label for="quantidade" style="margin-top: 15px; display: block; font-weight: 600;">Quantidade de ingressos:</label>
-                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" placeholder="Ex: 2" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: 'Poppins', sans-serif;">
-                </div>
-
-                <label for="mensagem">Mensagem adicional (Opcional):</label>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua dúvida ou detalhe alguma necessidade especial para a reserva..."></textarea>
-
-                <p class="rotulo-grupo">Deseja receber novidades por e-mail?</p>
+                <p class="rotulo-grupo">Tipo de Ingresso:</p>
                 <div class="grupo-opcoes">
-                    <input type="checkbox" id="newsletter" name="newsletter" value="sim" checked>
-                    <label for="newsletter">Sim, quero receber a programação e promoções.</label>
+                    <input type="radio" id="inteira" name="tipo_ingresso" value="inteira">
+                    <label for="inteira">Inteira</label>
+
+                    <input type="radio" id="meia" name="tipo_ingresso" value="meia">
+                    <label for="meia">Meia-Entrada (50% de desconto)</label>
                 </div>
 
-                <div class="botoes-form" style="margin-top: 30px;">
-                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-                    <button type="reset" class="btn-limpar">Limpar Campos</button>
-                </div>
-            </form>
-        </section>
-    </main>
+                <label for="quantidade" class="rotulo-destaque espacado">Quantidade de ingressos:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" max="10" placeholder="Ex: 2" class="campo-entrada">
+            </div>
+
+            <label for="mensagem">Mensagem adicional (Opcional):</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua dúvida ou detalhe alguma necessidade especial para a reserva..."></textarea>
+
+            <p class="rotulo-grupo">Deseja receber novidades por e-mail?</p>
+            <div class="grupo-opcoes">
+                <input type="checkbox" id="newsletter" name="newsletter" value="sim" checked>
+                <label for="newsletter">Sim, quero receber a programação e promoções.</label>
+            </div>
+
+            <div class="botoes-form">
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                <button type="reset" class="btn-limpar">Limpar Campos</button>
+            </div>
+        </form>
+    </section>
+</main>
 
     <footer>
         <p>Festival Viva Cena — Todos os direitos reservados | 2027</p>

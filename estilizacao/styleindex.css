@@ -129,6 +129,24 @@ section {
     transform: translateY(-1.5px);
 }
 
+.botao-reserva {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.botao-reserva:hover {
+    background-color: #e6b800;
+    transform: translateY(-1.5px);
+}
+
 .lista-simples {
     line-height: 1.6;
     margin-bottom: 20px;
@@ -174,26 +192,19 @@ th {
 
 .cabecalho {
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    gap: 30px; 
-    padding: 20px 40px; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 20px 40px;
 }
 
 .logo {
-    width: 120px; 
+    width: 120px;
     height: auto;
 }
 
 .textos-cabecalho {
-    text-align: left; 
-}
-
-.aviso-vendas {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    text-align: center;
-    border: none;
+    text-align: left;
 }
 
 .patrocinadores {
@@ -222,7 +233,7 @@ footer {
 }
 
 .galeria::-webkit-scrollbar {
-    height: 8px; 
+    height: 8px;
 }
 
 .galeria::-webkit-scrollbar-track {
@@ -231,7 +242,7 @@ footer {
 }
 
 .galeria::-webkit-scrollbar-thumb {
-    background: #0056b3; 
+    background: #0056b3;
     border-radius: 10px;
 }
 
@@ -247,4 +258,35 @@ body {
     background-attachment: fixed;
     margin: 0;
     min-height: 100vh;
+}
+
+.Aviso-ingressos {
+    position: relative;
+    z-index: 1;
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #3d4250;
+        margin: 25px 0;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 0;
+        font-size: 32px;
+    }
+}
+
+.apoios {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.descricaoeventos {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+    color: #dddddd;
 }

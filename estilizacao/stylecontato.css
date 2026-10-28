@@ -76,6 +76,7 @@ label,
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="number"],
 select,
 textarea {
 width: 100%;
@@ -188,4 +189,54 @@ body {
     background-attachment: fixed;
     margin: 0;
     min-height: 100vh;
+}
+
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.subtitulo-formulario {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.rotulo-destaque {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.rotulo-destaque.espacado {
+    margin-top: 15px;
+}
+
+.opcao-destaque {
+    font-weight: bold;
+}
+
+.caixa-reserva {
+    background-color: #f9f9f9;
+    border-left: 4px solid #ffcc00;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.caixa-reserva h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.caixa-reserva p:not(.rotulo-grupo) {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+select#atracao_desejada {
+    margin-bottom: 15px;
 }

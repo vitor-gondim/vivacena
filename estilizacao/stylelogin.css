@@ -45,9 +45,8 @@ header h1 {
 }
 
 main {
-    width: 85%;
+    width: 90%;
     max-width: 500px;
-    /* Mais estreito para o login */
     margin: 50px auto;
 }
 

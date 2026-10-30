@@ -1,0 +1,150 @@
+@import url('https://googleapis.com');
+
+body {
+    margin: 0;
+    font-family: 'Alex Brush', cursive;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0 5px 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.menu .pagina-atual {
+    border-bottom: 2px solid #ffcc00;
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.sessao-criar {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-top: 5px solid #e60000;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
+
+.btn-entrar {
+    background-color: #333333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #555555;
+    transform: translateY(-1.5px);
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding: 20px 40px; 
+}
+
+.logo {
+    width: 120px; 
+    height: auto;
+}
+
+.textos-cabecalho {
+    text-align: left; 
+}
+
+body {
+    background-image: url("../imagens/ondas-login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
